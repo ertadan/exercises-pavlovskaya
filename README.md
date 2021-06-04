@@ -7,14 +7,18 @@ There are two functions in calculator: calculate f(x) for some x
 or make tabulation for f(x) between x1 and x2 with step dx.
 
 We have two abstract classes : 
-**Action** 
+**Action**, 
 **Function**
 
 In this implementation we use pattern DoubleSwitch.
+
 As a Switch class we will use **Menu** class.
+
 We use two vectors : 
+
 1.pObjs with references on objects derived from
 **Function** class.(exponent,sin,cos)
+
 2.pActs with references on objects derived from
 **Action** class.(calculation,tabulation,anyaction).
 
@@ -55,3 +59,5 @@ To add a new **Function** we need to:
                        &f_sin, &f_cos };
 ```
 
+After doing this your **Menu** object will be initialized with
+new function object, which you can call.
