@@ -1,5 +1,8 @@
 #pragma once
 #include "Action.h"
+
+// Наследуемся от класса Действия
+
 class AnyAction :public Action {
 public:
 	AnyAction() : name("Any Action") {}

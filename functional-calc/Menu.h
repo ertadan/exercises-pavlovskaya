@@ -1,7 +1,9 @@
 #pragma once
 #include<vector>
+
 #include"Function.h"
 #include "Action.h"
+
 class Menu {
 public:
 	Menu(std::vector<Function*>, std::vector<Action*>);

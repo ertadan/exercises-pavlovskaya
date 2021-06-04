@@ -1,7 +1,12 @@
 #pragma once
 #ifndef  FUNCTION_H
-#define FUNCTION_H
+#define  FUNCTION_H
+
 #include <string>
+
+// Абстрактный класс функция, определяющий конкретные
+// функции калькулятора
+
 class Function {
 public:
 	virtual ~Function() {}
@@ -12,4 +17,5 @@ public:
 protected:
 	double x;
 };
+
 #endif // ! FUNCTION_H

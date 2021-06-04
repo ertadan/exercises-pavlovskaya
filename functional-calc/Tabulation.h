@@ -1,5 +1,8 @@
 #pragma once
 #include "Action.h"
+
+// наследуем от Действия  класс табуляции
+
 class Tabulation :public Action {
 public:
 	Tabulation() :name("Tabulation") {}

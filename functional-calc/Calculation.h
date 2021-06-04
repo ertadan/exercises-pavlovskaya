@@ -1,5 +1,9 @@
 #pragma once
 #include "Action.h"
+
+// наследуется от класса Action и реализует функции
+// расчета значения функции для определенного X
+
 class Calculation :public Action {
 public:
 	Calculation() :name("Calculation") {}

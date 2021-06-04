@@ -1,8 +1,11 @@
 #include <iostream>
 #include "Menu.h"
+
 using namespace std;
-Menu::Menu(vector<Function*>_pObj, vector<Action*>_pAct) :pObj(_pObj), pAct(_pAct) {
-	pObj.push_back(0);
+
+Menu::Menu(vector<Function*>_pObj, vector<Action*>_pAct)
+:pObj(_pObj), pAct(_pAct) {
+	pObj.push_back(0); // для выбора пункта Exit
 }
 Function* Menu::SelectObject() const {
 	int nItem = pObj.size();
