@@ -3,6 +3,9 @@
 ### Examples from book by T.A. Pavlovskaya Y.A. Shchupak
 ### C/C++ Structural programming
 
+The repository contains a code from chapters and solved exercises.
+
+In `functional-calc` there is a solution for a particular Object-oriented programming task.
 There are two functions in calculator: calculate f(x) for some x
 or make tabulation for f(x) between x1 and x2 with step dx.
 
