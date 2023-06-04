@@ -6,8 +6,6 @@
  * after-thus completing the entire main diagonal.
  * Find the number of the first row that does not contain any positive element.
 */
-// Write a program which sort rows of rectangular matrix
-// of ints in ascending order of their row sum 
 #include <fstream>
 #include <iostream>
 #include <iomanip>
