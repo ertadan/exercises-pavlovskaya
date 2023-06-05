@@ -31,6 +31,23 @@ int main () {
         for( int j = 0; j < nrow; j++ ) cout << setw(4) << a[i][j];
         cout << endl;
     }
+        int row_without_positives = -1;
+    for (int row = 0; row < nrow ; ++row) {
+        for (int col = 0; col < nrow ; ++col) {
+            if (a[row][col] > 0 ){
+                break;
+            } else if(col == nrow -1) {
+                row_without_positives = row;
+                break;
+            }
+        }
+        if(row_without_positives != -1) {
+            break;
+        }
+    }
+    cout << "---------------------------------" << endl;
+    if ( -1 == row_without_positives ) cout << " Строк не содержащих ни одного положительного элемента нет " << endl;
+    else                               cout << " Номер строки : " << row_without_positives << endl;
     cout << "---------------------------------" << endl;
     // 
     for( int n = 0 ; n < nrow; ++n) {
@@ -50,29 +67,12 @@ int main () {
         a[n][n] = a[row][col];
         a[row][col] = temp;
     }
-    int row_without_positives = -1;
-    for (int row = 0; row < nrow ; ++row) {
-        for (int col = 0; col < nrow ; ++col) {
-            if (a[row][col] > 0 ){
-                break;
-            } else if(col == nrow -1) {
-                row_without_positives = row;
-                break;
-            }
-        }
-        if(row_without_positives != -1) {
-            break;
-        }
-    }
-    if ( -1 == row_without_positives ) cout << " Строк не содержащих ни одного положительного элемента нет " << endl;
-    else                               cout << " Номер строки : " << row_without_positives << endl;
-    cout << "---------------------------------" << endl;
-
     for ( int i = 0; i < nrow; i++ ) {
         for( int j = 0; j < nrow; j++ ) cout << setw(4) << a[i][j];
         cout << endl;
     }
     cout << endl;
+    cout << "---------------------------------" << endl;
     // freeing memory
     for ( int i = 0; i < nrow; i++ ) delete [] a[i] ;
     delete [] a;
